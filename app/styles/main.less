@@ -20,9 +20,17 @@ body{
 #wrap{
   overflow:hidden;
   position: relative;
+  #wrapContent{
+    width: 100%;
+    margin-top: 0;
+    &.T{
+      .transition(margin-top .5s ease-in);
+    }
+  }
 }
 section{
-  width:100%;
+  .square(100%);
+  position: relative;
   &#home{
     background: #000;
   }

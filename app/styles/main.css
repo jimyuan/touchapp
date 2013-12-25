@@ -543,8 +543,18 @@ address {
   overflow: hidden;
   position: relative;
 }
+#wrap #wrapContent {
+  width: 100%;
+  margin-top: 0;
+}
+#wrap #wrapContent.T {
+  -webkit-transition: margin-top 0.5s ease-in;
+  transition: margin-top 0.5s ease-in;
+}
 section {
   width: 100%;
+  height: 100%;
+  position: relative;
 }
 section#home {
   background: #000;

@@ -61,16 +61,16 @@
         .bind("movestart",function(e){
              initMt = parseInt($(".trwrap").css("marginTop"));
              $(this).removeClass("trwrapT");
-             $(".word").eq(pageNum).removeClass("wordT");
+             // $(".word").eq(pageNum).removeClass("wordT");
 
         })
         .bind("move",function(e){
           var distY = e.distY;
 		 
-          var wordT = parseInt($(".word").eq(pageNum).attr("data-top"));
+          // var wordT = parseInt($(".word").eq(pageNum).attr("data-top"));
          $(".trwrap").css("marginTop",initMt+distY*0.6);
 		 
-          console.log(wordT+distY+10)
+          console.log(distY+10)
          $(".word").eq(pageNum).css("top",wordT+distY);
 
          
@@ -80,9 +80,9 @@
           var winH = $(window).height();
            var wordT = parseInt($(".word").eq(pageNum).attr("data-top"));
             $(this).addClass("trwrapT");
-            $(".word").eq(pageNum).addClass("wordT");
+            // $(".word").eq(pageNum).addClass("wordT");
             $(".trwrap").css("marginTop",-winH*pageNum);
-            $(".word").eq(pageNum).css("top",wordT);
+            // $(".word").eq(pageNum).css("top",wordT);
             
         })
         
