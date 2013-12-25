@@ -539,4 +539,20 @@ address {
   font-style: normal;
   line-height: 1.428571429;
 }
+#wrap {
+  overflow: hidden;
+  position: relative;
+}
+section {
+  width: 100%;
+}
+section#home {
+  background: #000;
+}
+section#apply {
+  background: #210c09;
+}
+section img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=/styles/main.css.map */
