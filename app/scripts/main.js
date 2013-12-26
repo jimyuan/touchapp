@@ -79,8 +79,8 @@
               return false;
             }
             else{
-              alert(data.message);
-              window.location.href="image.html";
+              // alert(data.message);
+              window.location.href=data.message;
             }
           });
         });
