@@ -14,3 +14,26 @@
 // @import "../bower_components/bootstrap/less/tables.less";
 // @import "../bower_components/bootstrap/less/forms.less";
 // @import "../bower_components/bootstrap/less/buttons.less";
+
+section{
+  .square(200px);
+  .center-block;
+  display: block;
+  position: absolute;
+  top:100px; left:50%;
+  margin-left: -100px;
+  .transition(all .4s ease-in);
+  &#no1{
+    background:rgba(255,0,0,.7);
+    border:5px solid rgb(255,0,0);
+  }
+  &#no2{
+    background:rgba(0,255,0,.7);
+    border:5px solid rgb(0,255,0);
+  }
+  &#no3{
+    background:rgba(0,0,255,.7);
+    border:5px solid rgb(0,0,255);   
+  }
+
+}
