@@ -32,12 +32,79 @@ section{
   .square(100%);
   position: relative;
   &#home{
-    background: #000;
+    background:#000;
   }
   &#apply{
-    background: #210c09;
+    background:#210c09 url(../images/cover-2.jpg) no-repeat center 0;
+    background-size: contain;
+    &>a{
+      .size(88px,20px);
+      text-indent: -90000px;
+      position: absolute;
+      left: 50%;
+      margin-left: -110px;
+      background-repeat: no-repeat;
+      background-size:contain;
+    }
+    &>a.rightNow{
+      background-image: url(../images/bg-btn-1.jpg);
+      top: 270px;
+    }
+    &>a.goApply{
+      background-image: url(../images/bg-btn-2.jpg);
+      top: 320px;
+    }
   }
   img{
     max-width: 100%;
   }
+}
+.formPage{
+  background:#1e0c0a;
+  .formWrap{
+    .size(100%,628px/2);
+    background: url(../images/cover-3.jpg) no-repeat center 0;
+    background-size: contain;
+    margin: 0 auto;
+    &>form{
+      // .square(150px*2);
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      top: 180px-20;
+      .formgroup{
+        margin-top: 12px;
+      }
+      .labelWord{
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        width: 50px;
+      }
+      .sel{
+        .size(102px, 16px);
+      }
+      .coverBut{
+        .size(104px, 20px);
+        margin-top: 50px;
+        background: url(../images/coverBut.jpg) no-repeat;
+        background-size: contain;
+      }
+      .applyOK{
+        .size(68px, 20px);
+        display: block;
+        float: left;
+        text-indent: -90000px;
+      }
+      .share {
+        .size(36px, 20px);
+        display: block;
+        float: left;
+      }
+    }
+  }
+}
+
+.distImg{
+  max-width: 100%;
 }
