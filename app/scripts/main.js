@@ -72,7 +72,7 @@
         });
         submit.on("tap", function(e){
           e.preventDefault();
-          var url="apply.ashx",
+          var url="../m/apply.ashx",
               param={city:s1.val(), counter:s2.val()};
           $.post(url, param, function(data){
             if(data.result==="failed"){
@@ -82,7 +82,7 @@
               // alert(data.message);
               window.location.href=data.message;
             }
-          });
+          },"json");
         });
       };
       return makeapply;
