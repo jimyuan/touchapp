@@ -17,7 +17,6 @@
         var pageNum=0;
         this.init();
         c.on("touchstart", function(e){
-          e.preventDefault();
           curTop=parseInt(c.style("margin-top"), 10);
           startY=e.pageY;
           $(this).removeClass('T');
@@ -25,7 +24,6 @@
         }).on("touchmove",function(e){
           e.preventDefault();
           distY=e.pageY-startY;
-          console.log(distY);
           c.style("margin-top", curTop+distY*0.6+"px");
 
         }).on("touchend",function(){
