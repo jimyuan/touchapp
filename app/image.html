@@ -12,11 +12,39 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script type="text/javascript">  
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22413153-1']);
+      _gaq.push(['_setDomainName', '.shuuemura.com.cn']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_setAllowHash', false]);
+      _gaq.push(['_trackPageview']);
+
+
+      (function(){
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>    
   </head>
   <body class="formPage">
     <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <img class="distImg" src="images/dist.jpg">
+    <img class="distImg" src="">
+    <script>
+      var path=window.location.hash.replace("#","");
+      var img=document.getElementsByClassName("distImg")[0];
+      (path==="") ? (img.src="images/dist.jpg") : (img.src=path);
+    </script>
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/quojs/quo.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/track.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

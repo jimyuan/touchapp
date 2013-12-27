@@ -12,6 +12,24 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script type="text/javascript">  
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22413153-1']);
+      _gaq.push(['_setDomainName', '.shuuemura.com.cn']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_setAllowHash', false]);
+      _gaq.push(['_trackPageview']);
+
+
+      (function(){
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -25,7 +43,7 @@
         </section>
 
         <section id="apply">
-          <a href="http://www.shuuemura.com.cn/shuuemura/_zh/_cn/skincare/cleansing-oils/SHU2013120302.aspx" class="rightNow">立即购买</a>
+          <a href="http://www.shuuemura.com.cn/shuuemura/_zh/_cn/skincare/cleansing-oils/SHU2013120302.aspx" class="rightNow" target="_blank">立即购买</a>
           <a href="apply.html" class="goApply">申领试用</a>
         </section>
       </div>
@@ -33,6 +51,7 @@
     <!-- build:js scripts/main.js -->
     <script src="bower_components/quojs/quo.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/track.js"></script>
     <!-- endbuild -->
   </body>
 </html>

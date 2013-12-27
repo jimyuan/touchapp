@@ -2,7 +2,7 @@
   var MakeSwipe={
     createNew: function(){
       var makeswipe={};
-      var wh=window.innerHeight,//滑动单位长度
+      var wh=  window.innerHeight,//滑动单位长度
           b =  $("section"),      //滑动页
           w =  $("#wrap"),        //定长容器
           c =  $("#wrapContent"), //滑动页包裹
@@ -78,9 +78,9 @@
             if(data.result==="failed"){
               return false;
             }
-            else{
-              // alert(data.message);
-              window.location.href=data.message;
+            else if(data.result==="success"){
+              alert("恭喜您成功申领，稍后会收到确认短信，凭短信可至植村秀专柜领取体验");
+              window.location.href="image.html#../m/"+data.message;
             }
           },"json");
         });
