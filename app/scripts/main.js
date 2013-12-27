@@ -79,7 +79,6 @@
               return false;
             }
             else if(data.result==="success"){
-              alert("恭喜您成功申领，稍后会收到确认短信，凭短信可至植村秀专柜领取体验");
               window.location.href="image.html#../m/"+data.message;
             }
           },"json");
