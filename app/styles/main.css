@@ -539,4 +539,33 @@ address {
   font-style: normal;
   line-height: 1.428571429;
 }
+html,
+body,
+#Zodiac {
+  width: 100%;
+  height: 100%;
+}
+#Zodiac {
+  background: red;
+}
+#Calendar {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  left: 0;
+  top: 0px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+#Calendar.in {
+  top: 0;
+}
+#Calendar .weekLine {
+  margin: 0 1%;
+}
+#Calendar .weekLine li {
+  width: 14%;
+  float: left;
+  text-align: center;
+}
 /*# sourceMappingURL=/styles/main.css.map */

@@ -14,3 +14,27 @@
 // @import "../bower_components/bootstrap/less/tables.less";
 // @import "../bower_components/bootstrap/less/forms.less";
 // @import "../bower_components/bootstrap/less/buttons.less";
+html, body, #Zodiac{
+  .square(100%);
+}
+#Zodiac{
+  background: red;
+}
+#Calendar{
+  position: absolute;
+  width: 100%;
+  background:rgba(255,255,255,.8);
+  left:0; top:0px;
+  .transition(all 1s ease-out);
+  &.in{
+    top:0;
+  }
+  .weekLine{
+    margin:0 1%;
+    li{
+      width:14%;
+      float:left;
+      text-align: center;
+    }
+  }
+}
