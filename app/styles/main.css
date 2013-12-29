@@ -545,6 +545,12 @@ body,
   width: 100%;
   height: 100%;
 }
+.notCurrent {
+  color: #a6a6a6;
+}
+.weekend {
+  color: red;
+}
 #Zodiac {
   background: red;
 }
@@ -553,9 +559,9 @@ body,
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
   left: 0;
-  top: 0px;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  top: -200px;
+  -webkit-transition: top 0.5s linear;
+  transition: top 0.5s linear;
 }
 #Calendar.in {
   top: 0;
@@ -567,5 +573,12 @@ body,
   width: 14%;
   float: left;
   text-align: center;
+}
+#Calendar .today {
+  color: red;
+}
+#Calendar #Weekday > li:not(.notCurrent):nth-child(7n+1),
+#Calendar #Weekday > li:not(.notCurrent):nth-child(7n) {
+  color: red;
 }
 /*# sourceMappingURL=/styles/main.css.map */
