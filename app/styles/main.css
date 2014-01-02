@@ -539,4 +539,13 @@ address {
   font-style: normal;
   line-height: 1.428571429;
 }
+#Bwing {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+#Bwing .zoomin {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
 /*# sourceMappingURL=/styles/main.css.map */
